@@ -149,7 +149,7 @@ public class RectangleTest {
     }
     
     public static void main(String[] args) {
-        org.junit.runner.JUnitCore.main("RectangleTest");
+        org.junit.runner.JUnitCore.main("Rectangle.RectangleTest");
     }
     
 }

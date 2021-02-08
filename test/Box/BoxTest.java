@@ -62,4 +62,8 @@ public class BoxTest {
         }
     }
     
+    public static void main(String args[]){
+        org.junit.runner.JUnitCore.main("Box.BoxTest");
+    }
+    
 }

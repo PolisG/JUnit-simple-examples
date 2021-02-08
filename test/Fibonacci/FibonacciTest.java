@@ -34,4 +34,7 @@ public class FibonacciTest {
         System.out.println(Fibonacci.compute(fInput));
     }
     
+    public static void main(String args[]){
+        org.junit.runner.JUnitCore.main("Fibonacci.FibonacciTest");
+    }
 }

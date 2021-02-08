@@ -1,5 +1,7 @@
 package Employee;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -10,6 +12,18 @@ import static org.junit.Assert.*;
 public class EmployeeTest {
     
     public EmployeeTest() {
+    }
+    
+    @Before
+    public void setUp() {
+        // Ekteleitai prin apo kathe test.
+        System.out.println("Test initialization.");
+    }
+    
+    @After
+    public void tearDown() {
+        // Ekteleitai meta apo kathe test.
+        System.out.println("Test has finished."+"\n");
     }
 
     /**
@@ -30,4 +44,7 @@ public class EmployeeTest {
         assertEquals(expectedEmpObj, Employee.getHighestPaidEmployee());
     }
     
+    public static void main(String args[]){
+        org.junit.runner.JUnitCore.main("Employee.EmployeeTest");
+    }
 }
